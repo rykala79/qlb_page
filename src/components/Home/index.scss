@@ -1,0 +1,63 @@
+.home-page {
+    .text-zone {
+      position: absolute;
+      left: 20%;
+      top: 30%;
+      transform: translateY(-50%);
+      width: 60%;
+      max-height: 90%;
+    }
+
+    h1 {
+      color: rgb(30, 6, 107);
+      font-size: 60px;
+      line-height: 60px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+
+    }
+  
+    h2 {
+      color: rgb(30, 6, 107);
+      font-size: 60px;
+      line-height: 83px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+  
+      &:before {
+        content: '';
+        font-family: 'La Belle Aurore', cursive;
+        color: #ffd700;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -40px;
+        left: -15px;
+        opacity: 0.6;
+      }
+  
+      &:after {
+        content: '';
+        font-family: 'La Belle Aurore', cursive;
+        color: #ffd700;
+        font-size: 18px;
+        position: absolute;
+        margin-top: 38px;
+        margin-left: 20px;
+        animation: fadeIn 1s 1.7s backwards;
+        opacity: 0.6;
+      }
+  
+      img {
+        margin-left: -20px;
+        margin-top: 30px;
+        margin-bottom: -10px;
+        opacity: 0;
+        width: 70px;
+        height: auto;
+        animation: rotateIn 1s linear both;
+        animation-delay: 1.4s;
+      }
+    }
+     }

@@ -1,32 +1,30 @@
 import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
+
 import LogoQ from '../../../assets/images/logo_Q.png'
-import LogoQlb from '../../../assets/images/logo_qlb.png'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faLinkedin,
-  faYoutube,
-  faFacebook,
-  faTwitter,
-  faTiktok,
-} from '@fortawesome/free-brands-svg-icons'
+
 import {
   faHome,
   faUser,
   faEnvelope,
-  faSuitcase,
-  faBars,
-  faClose,
   faHeartPulse,
   faPersonWalking,
   faShop
 } from '@fortawesome/free-solid-svg-icons'
 
 const LeftSidebar = () => (
+  
+  
+
+
   <div className="nav-bar-left">
+  
     <Link className="logo" to="/">
+    
       <img src={LogoQ} alt="logo" />
-      <img className="logo-qlb" src={LogoQlb} alt="logoqlb" />
+      
     </Link>
 
     <nav>
@@ -81,5 +79,7 @@ const LeftSidebar = () => (
     </nav>
   </div>
 )
+
+ 
 
 export default LeftSidebar
