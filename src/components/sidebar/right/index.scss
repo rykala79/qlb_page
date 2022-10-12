@@ -1,10 +1,12 @@
 .nav-bar-right {
   background-image: url(../../../assets/images/sidebar.png);
   width: 100px;
-  height: 100%;
-  right: 0;
+  height: 97%;
+  right: 7px;
   position: absolute;
-  top: 0;
+  top: 10px;
+  
+  border-radius: 5px ;
   z-index: 3;
   min-height: 500px;
 }
@@ -25,12 +27,12 @@ ul {
       display: block;
       font-size: 40px;
       line-height: 40px;
-      color: #060684;
+      color: #0707a1;
     }
 
     &:hover {
       .anchor-icon {
-        color: #ffd700;
+        color: #e625c5;
       }
     }
   }

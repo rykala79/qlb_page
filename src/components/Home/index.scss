@@ -1,8 +1,8 @@
 .home-page {
     .text-zone {
       position: absolute;
-      left: 20%;
-      top: 30%;
+      left: 10%;
+      top: 40%;
       transform: translateY(-50%);
       width: 60%;
       max-height: 90%;
@@ -11,8 +11,9 @@
     h1 {
       color: rgb(30, 6, 107);
       font-size: 60px;
-      line-height: 60px;
-      margin: 0;
+      line-height: 70px;
+      margin-left: 70px;
+      
       font-family: 'Coolvetica';
       font-weight: 400;
 
@@ -22,7 +23,7 @@
       color: rgb(30, 6, 107);
       font-size: 60px;
       line-height: 83px;
-      margin: 0;
+      margin-left: 120px;
       font-family: 'Coolvetica';
       font-weight: 400;
   
@@ -50,11 +51,11 @@
       }
   
       img {
-        margin-left: -20px;
+        margin-left: 20px;
         margin-top: 30px;
-        margin-bottom: -10px;
+        margin-bottom: -20px;
         opacity: 0;
-        width: 70px;
+        width: 100px;
         height: auto;
         animation: rotateIn 1s linear both;
         animation-delay: 1.4s;

@@ -9,6 +9,7 @@ body {
   margin: 0;
   font: 300 11px/1.4 'Helvetica Neue', sans-serif;
   color: rgb(57, 24, 178);
+  background-image: url(../src/assets/images/bg_qlb.jpg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   

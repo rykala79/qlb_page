@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
-
-import LogoQ from '../../../assets/images/logo_Q.png'
+import { useState } from 'react'
+import LogoQ from '../../../assets/images/QLB.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -11,75 +11,83 @@ import {
   faEnvelope,
   faHeartPulse,
   faPersonWalking,
-  faShop
+  faShop,
+  faClose,
 } from '@fortawesome/free-solid-svg-icons'
 
-const LeftSidebar = () => (
-  
-  
+const LeftSidebar = () => {
+  const [showNav, setShowNav] = useState(false)
 
+  return (
+    <div className="nav-bar-left">
+      <Link className="logo" to="/" onClick={() => setShowNav(false)}>
+        <img src={LogoQ} alt="logo" />
+      </Link>
 
-  <div className="nav-bar-left">
-  
-    <Link className="logo" to="/">
-    
-      <img src={LogoQ} alt="logo" />
-      
-    </Link>
+      <nav className={showNav ? 'mobile-show' : ''}>
+        <NavLink exact="true" activeclassname="active" to="/">
+          <FontAwesomeIcon icon={faHome} color="#060684" />
+        </NavLink>
 
-    <nav>
-      <NavLink exact="true" activeclassname="active" to="/home">
-        <FontAwesomeIcon icon={faHome} color="#060684" />
-      </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="about-link"
+          to="/about"
+          onClick={() => setShowNav(false)}
+        >
+          <FontAwesomeIcon icon={faUser} color="#060684" />
+        </NavLink>
 
-      <NavLink
-        exact="true"
-        activeclassname="active"
-        className="about-link"
-        to="/"
-      >
-        <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-      </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="zdrowie-link"
+          to="/health"
+          onClick={() => setShowNav(false)}
+        >
+          <FontAwesomeIcon icon={faHeartPulse} color="#060684" />
+        </NavLink>
 
-      <NavLink
-        exact="true"
-        activeclassname="active"
-        className="zdrowie-link"
-        to="/"
-      >
-        <FontAwesomeIcon icon={faHeartPulse} color="#060684" />
-      </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="aktywnosc-link"
+          to="/active"
+          onClick={() => setShowNav(false)}
+        >
+          <FontAwesomeIcon icon={faPersonWalking} color="#060684" />
+        </NavLink>
 
-      <NavLink
-        exact="true"
-        activeclassname="active"
-        className="aktywnosc-link"
-        to="/"
-      >
-        <FontAwesomeIcon icon={faPersonWalking} color="#4d4d4d" />
-      </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="shop-link"
+          to="/shop"
+          onClick={() => setShowNav(false)}
+        >
+          <FontAwesomeIcon icon={faShop} color="#060684" />
+        </NavLink>
 
-      <NavLink
-        exact="true"
-        activeclassname="active"
-        className="shop-link"
-        to="/"
-      >
-        <FontAwesomeIcon icon={faShop} color="#4d4d4d" />
-      </NavLink>
+        <NavLink
+          activeclassname="active"
+          className="contact-link"
+          to="/contact"
+          onClick={() => setShowNav(false)}
+        >
+          <FontAwesomeIcon icon={faEnvelope} color="#060684" />
+        </NavLink>
 
-      <NavLink
-        exact="true"
-        activeclassname="active"
-        className="contact-link"
-        to="/"
-      >
-        <FontAwesomeIcon icon={faEnvelope} color="#4d4d4d" />
-      </NavLink>
-    </nav>
-  </div>
-)
-
- 
+        <FontAwesomeIcon
+          onClick={() => setShowNav(false)}
+          icon={faClose}
+          color="#ffd700"
+          size="3x"
+          className="close-icon"
+        />
+      </nav>
+    </div>
+  )
+}
 
 export default LeftSidebar
