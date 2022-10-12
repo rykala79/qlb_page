@@ -29,7 +29,7 @@ const LeftSidebar = () => (
 
     <nav>
       <NavLink exact="true" activeclassname="active" to="/home">
-        <FontAwesomeIcon icon={faHome} color="#4d4d4d" />
+        <FontAwesomeIcon icon={faHome} color="#060684" />
       </NavLink>
 
       <NavLink
@@ -47,7 +47,7 @@ const LeftSidebar = () => (
         className="zdrowie-link"
         to="/"
       >
-        <FontAwesomeIcon icon={faHeartPulse} color="#4d4d4d" />
+        <FontAwesomeIcon icon={faHeartPulse} color="#060684" />
       </NavLink>
 
       <NavLink
