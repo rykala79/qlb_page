@@ -18,6 +18,7 @@ const RightSidebar = () => (
       <li>
         <a
         href="https://www.facebook.com"
+        rel=" noreferrer"
          target="_blank">
           <FontAwesomeIcon icon={faFacebook} className="anchor-icon" />
         </a>
@@ -25,25 +26,32 @@ const RightSidebar = () => (
 
       <li>
         <a href="https://www.instagram.com"
+        rel=" noreferrer"
          target="_blank">
           <FontAwesomeIcon icon={faInstagram} className="anchor-icon" />
         </a>
       </li>
 
       <li>
-        <a href="https://www.youtube.com" rel=" noreferrer" target="_blank">
+        <a href="https://www.youtube.com" 
+        rel=" noreferrer" 
+        target="_blank">
           <FontAwesomeIcon icon={faYoutube} className="anchor-icon" />
         </a>
       </li>
 
       <li>
-        <a href="https://www.linkedin.com" target="_blank">
+        <a href="https://www.linkedin.com" 
+        rel=" noreferrer"
+        target="_blank">
           <FontAwesomeIcon icon={faLinkedin} className="anchor-icon" />
         </a>
       </li>
 
       <li>
-        <a href="https://www.twitter.com" target="_blank">
+        <a href="https://www.twitter.com"
+        rel=" noreferrer"
+         target="_blank">
           <FontAwesomeIcon icon={faTwitter} className="anchor-icon" />
         </a>
       </li>
